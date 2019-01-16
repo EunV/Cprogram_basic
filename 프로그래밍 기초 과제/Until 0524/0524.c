@@ -13,7 +13,7 @@ int main(void)
 
 	srand((unsigned int)time(0));
 
-	do
+	while (1)
 	{
 		do
 		{
@@ -30,22 +30,19 @@ int main(void)
 		printf("you : %d \t computer : %d \n", input, cpu);
 
 		if (result == 1)
-			printf("½Â \n");
-
-		if (result == -1)
-			printf("ÆÐ \n");
-
-		if (result == 0)
-			printf("¹«½ÂºÎ \n");
-
-	} while (input != 0);
-
+			puts("ÀÌ°å½À´Ï´Ù");
+		else if (result == -1)
+			puts("Á³½À´Ï´Ù");
+		else
+			puts("ºñ°å½À´Ï´Ù");
+	}
 	return 0;
 }
 
 int rockScissorsPaper(void)
 {
 	int computer;
+
 	computer = rand() % 3 + 1;
 	return computer;
 }

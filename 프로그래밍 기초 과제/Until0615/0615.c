@@ -21,8 +21,7 @@ void print(double input[], int n)
 
 	for (i = 0; i < n; i++)
 		printf("%.1lf ", input[i]);
-
-	printf(" \n");
+	puts("");
 }
 
 double min(double input[], int n)
