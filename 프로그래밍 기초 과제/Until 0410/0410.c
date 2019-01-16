@@ -12,7 +12,7 @@ int main(void)
 	switch (wheather)
 	{
 	case 'c':
-		printf("기온을 입력해주세요. (섭씨 온도) \n");
+		printf("기온을 입력하세요 : ");
 		scanf_s("%d", &temp);
 
 		if (temp >= 30)
@@ -24,7 +24,7 @@ int main(void)
 		break;
 
 	case 'r':
-		printf("강수량을 입력하세요. (mm) \n");
+		printf("강수량을 입력하세요 : ");
 		scanf_s("%d", &rainfall);
 		{
 			if (rainfall >= 30)
@@ -42,10 +42,9 @@ int main(void)
 
 	default:
 		if (wheather >= 'A' && wheather <= 'Z')
-			printf("대문자는 입력하지 마세요.\nc,r,s 중 하나를 입력하세요 \n");
+			puts("대문자가 아닌 소문자를 입력하세요 (r,c,s)");
 		else
-			printf("잘못된 입력입니다. \nc,r,s 중 하나를 입력하세요 \n");
-
+			puts("잘못된 입력 값입니다. (r,c,s) 중 하나를 입력하세요");
 	}
 
 	return 0;
