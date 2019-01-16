@@ -19,7 +19,6 @@ int main(void)
 		/*3ºº ¿Ã«œ*/
 		if (age < 3)
 			cost = 0;
-
 		/*13~64*/
 		else if (age > 12 && age < 65)
 		{
